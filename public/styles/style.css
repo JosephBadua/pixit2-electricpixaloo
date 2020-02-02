@@ -1,6 +1,8 @@
 /* Landing */
+body {
+  background: rgb(30,42,66) !important;
+}
 .main {
-    height: 82.5vh !important;
     background: rgb(30,42,66) !important;
 }
 .top-fluid {
@@ -20,12 +22,64 @@
 }
 /*map*/ 
 #map {
-    height: 81vh;
+    height: 60vh;
     width: 100%;
-    padding:30px;
+    margin: auto;
+    padding: 5em !important;
     border: 2px solid rgb(151,198,214);
     border-radius: 5%;
 }
+.pixitMain {
+  text-align: center !important;
+  padding:0.5em;
+  font-size: 3em;
+  color: white;
+  font-weight: bold;
+}
+.centerJust {
+  margin: auto;
+}
+.wrapper {
+  padding: 30px;
+  display: grid;
+  grid-gap: 20px;
+  grid-template-columns: 1fr 1fr 1fr;
+  color: #444;
+}
+
+.box {
+  background-color: #444;
+  color: #fff;
+  border-radius: 5px;
+  padding: 20px;
+  height:20em;
+  width: 100%;
+
+}
+
+.a {
+  grid-column: 1 / span 2;
+  background-image: url('https://www.straitstimes.com/sites/default/files/styles/article_pictrure_780x520_/public/articles/2018/09/02/ST_20180902_XBEACH_4250595.jpg?itok=cJpe5NOE&timestamp=1535827078');
+}
+.b {
+  grid-column: 3 ;
+  grid-row: 1 / span 2;
+  background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTz22Bb0oKOdDNOCrXUhPoSR8qMEYT2ZNTHlr_gU_CLQCYmmORE');
+  background-size: cover;
+}
+.c {
+  grid-column: 1 ;
+  grid-row: 2 ;
+  background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcRoz8TCWz5he1ie8-N3w5fdX1peBc4uWrSgdDVjp_ojoyDsNbi9');
+  background-size: cover;
+}
+.d {
+  grid-column: 2 / span 3;
+  grid-row: 2 ;
+  background-image: url('https://cdn9.dissolve.com/p/D985_25_443/D985_25_443_1200.jpg');
+  background-size: contain;
+}
+
 /*About */
 .about-background {
     position: relative;

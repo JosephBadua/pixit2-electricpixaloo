@@ -4,9 +4,9 @@ var D = new Date();
 var Hours = D.getHours();
 function initMap() {
   map = new google.maps.Map(document.getElementById('map'), {
-    center: {lat: -34.397, lng: 150.644},
-    zoom: 18,
+    zoom: 17,
     zoomControl: false,
+    disableDefaultUI: true,
     styles: Hours < 16 ?  [
         {elementType: 'geometry', stylers: [{color: '#242f3e'}]},
         {elementType: 'labels.text.stroke', stylers: [{color: '#242f3e'}]},
@@ -93,21 +93,34 @@ function initMap() {
   google.maps.event.addListener(map, 'click', function(event) {
     placeMarker(event.latLng);
  });
- 
- fetch('http://35.222.157.224:8080/api_location')
- .then((response) => {
-   return response.json();
- })
- .then((myJson) => {
-   console.log(myJson);
- });
 
- function placeMarker(location) {
-     var marker = new google.maps.Marker({
-         position: location, 
-         map: map
-     });
- }
+ var icon = {
+  url: 'https://store-images.s-microsoft.com/image/apps.60234.13510798886853140.ed99bad0-2a4d-4a54-af04-ccaad35c8d64.a6d07122-8325-4a53-becd-cd028ec6f55f',
+  scaledSize: new google.maps.Size(50, 50), // scaled size
+}
+function placeMarker(location) {
+  console.log(location)
+    var marker = new google.maps.Marker({
+        position: location, 
+        map: map,
+        icon: icon
+    });
+}
+
+axios.get('http://35.222.157.224/api_location')
+  .then((response) => {
+    for (let i = 0; i < response.data.length; i++) {
+      let latitude = response.data[i].latt;
+      let longitude = response.data[i].long;
+
+      var marker = new google.maps.Marker({
+        position: new google.maps.LatLng(latitude, longitude),
+        icon: icon,
+        map: map
+      });
+    }
+  });
+
   // Try HTML5 geolocation.
   if (navigator.geolocation) {
     navigator.geolocation.getCurrentPosition(function(position) {
@@ -117,7 +130,7 @@ function initMap() {
       };
 
       infoWindow.setPosition(pos);
-      infoWindow.setContent('You are here ${name}');
+      infoWindow.setContent('Welcome to Pixit, you are here!');
       infoWindow.open(map);
       map.setCenter(pos);
     }, function() {
