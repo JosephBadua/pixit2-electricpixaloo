@@ -152,9 +152,9 @@ body {
 }
 
 table {
-    width: 100em;
-    height: 30em;
-    margin: auto;
+  width: 100em;
+  height: 30em;
+  margin: auto;
 	border-collapse: collapse;
 	overflow: hidden;
 	box-shadow: 0 0 20px rgba(131, 110, 190, 0.1);
@@ -168,20 +168,19 @@ td:nth-child(2n){
 }
 
 th {
-        background-color: #55608f;
-        text-align: center;
-        padding: 20px;
-        border-left: 1px solid black;
-        border-right: 1px solid black;
-
+  background-color: #55608f;
+  text-align: center;
+  padding: 20px;
+  border-left: 1px solid black;
+  border-right: 1px solid black;
 }
 
 tr{
-    background-color: rgba(27, 210, 223, 0.3);
+  background-color: rgba(27, 210, 223, 0.3);
 }
 
 td {
-    text-align: center;
+  text-align: center;
 }
 /*Login*/ 
 .LogIn {
@@ -200,6 +199,7 @@ td {
 }
 .inputBox {
   font-size: 3em;
+  margin: 0.1em;
 }
 .gridWrapper {
   display: grid;
@@ -208,4 +208,17 @@ td {
 .labelClass {
   font-size: 3em;
   color: white;
+  text-align: center;
+}
+/*Carousel*/
+.item {
+  background: #333;
+  text-align: center;
+  height: 300px;
+}
+h2 {
+  margin: 0;
+  color: #888;
+  padding-top: 80px;
+  font-size: 30px;
 }
