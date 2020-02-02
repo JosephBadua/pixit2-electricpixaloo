@@ -1,0 +1,13 @@
+{
+    "env": {
+        "browser": true,
+        "commonjs": true,
+        "node": true
+    },
+    "extends": "prettier",
+    "plugins": [
+        "prettier"
+      ],
+    "rules": {
+    }
+}

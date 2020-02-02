@@ -1,0 +1,125 @@
+/* Landing */
+.main {
+    height: 82.5vh !important;
+    background: rgb(30,42,66) !important;
+}
+.top-fluid {
+    background: rgb(151,198,214);
+}
+.title {
+    font-size: 8em;
+    text-align: center;
+}
+.nav-link {
+    margin: auto !important;
+    text-decoration: none !important;
+    color: black !important;
+}
+.nav-text {
+    margin: auto;
+}
+/*map*/ 
+#map {
+    height: 81vh;
+    width: 100%;
+    padding:30px;
+    border: 2px solid rgb(151,198,214);
+    border-radius: 5%;
+}
+/*About */
+.about-background {
+    position: relative;
+    z-index: 1;
+  }
+  .about-background:before {
+    content: "";
+      position: absolute;
+      z-index: -1;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+    background-image: url("https://static01.nyt.com/images/2018/10/09/us/09sanfrancisco-1-print/00dirtystreets-02-superJumbo.jpg?quality=90&auto=webp"); /*IMAGE TAKEN FROM THE NYT https://www.nytimes.com/2018/10/08/us/san-francisco-dirtiest-street-london-breed.html*/
+    background-size: cover;
+    max-height: 82.5vh;
+    opacity: 0.3;
+  }
+  .about-p {
+    color: #97c6d6;
+    font-size: 2em;
+    font-weight: bold;
+    margin: auto;
+    width: 90%;
+    text-align: center;
+    padding: 0.7em;
+    position: relative;
+    z-index: 1;
+  }
+  .about-image-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+  .about-image {
+    margin: auto;
+    height: 20em;
+    width: 15em;
+    object-fit: cover;
+    border-radius: 30%;
+    animation:fade-in 0.6s 1s cubic-bezier(.39,.575,.565,1.000) both;
+    transition: all 0.2s;
+  }
+  .about-span {
+    font-size: 1.7em;
+    color: #1ab4e7;
+  }
+  .earth, .trash {
+    border-radius: 0% !important;
+  }
+  .earth, .trash {
+    object-fit: contain;
+    height: 23em;
+    width: 18em;
+  }
+  
+  @keyframes fade-in{0%{opacity:0}100%{opacity:1}}@keyframes fade-in{0%{opacity:0}100%{opacity:1}}
+
+/*Leaderboards*/
+.container-table {
+	position: absolute;
+	top: 55%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+table {
+    width: 100em;
+    height: 30em;
+    margin: auto;
+	border-collapse: collapse;
+	overflow: hidden;
+	box-shadow: 0 0 20px rgba(131, 110, 190, 0.1);
+}
+
+th,
+td:nth-child(2n){
+	padding: 15px;
+	background-color: rgba(255,255,255,0.2);
+	color: #fff;
+}
+
+th {
+        background-color: #55608f;
+        text-align: center;
+        padding: 20px;
+        border-left: 1px solid black;
+        border-right: 1px solid black;
+
+}
+
+tr{
+    background-color: rgba(27, 210, 223, 0.3);
+}
+
+td {
+    text-align: center;
+}
