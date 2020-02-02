@@ -1,7 +1,7 @@
 {
-  "name": "mathgame",
+  "name": "pixit",
   "version": "1.0.0",
-  "description": "Vanilla Javascript and CSS Grid Project",
+  "description": "Pixit",
   "main": "server.js",
   "scripts": {
     "start": "node server.js",
@@ -28,5 +28,14 @@
     "eslint-plugin-prettier": "^3.1.0",
     "mocha": "^6.1.4",
     "prettier": "^1.17.1"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JosephBadua/pixit2-electricpixaloo.git"
+  },
+  "author": "",
+  "bugs": {
+    "url": "https://github.com/JosephBadua/pixit2-electricpixaloo/issues"
+  },
+  "homepage": "https://github.com/JosephBadua/pixit2-electricpixaloo#readme"
 }

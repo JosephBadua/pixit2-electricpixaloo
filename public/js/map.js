@@ -90,7 +90,24 @@ function initMap() {
     : null
   });
   infoWindow = new google.maps.InfoWindow;
+  google.maps.event.addListener(map, 'click', function(event) {
+    placeMarker(event.latLng);
+ });
+ 
+ fetch('http://35.222.157.224:8080/api_location')
+ .then((response) => {
+   return response.json();
+ })
+ .then((myJson) => {
+   console.log(myJson);
+ });
 
+ function placeMarker(location) {
+     var marker = new google.maps.Marker({
+         position: location, 
+         map: map
+     });
+ }
   // Try HTML5 geolocation.
   if (navigator.geolocation) {
     navigator.geolocation.getCurrentPosition(function(position) {
@@ -110,6 +127,9 @@ function initMap() {
     // Browser doesn't support Geolocation
     handleLocationError(false, infoWindow, map.getCenter());
   }
+
+  
+
 }
 
 function handleLocationError(browserHasGeolocation, infoWindow, pos) {
