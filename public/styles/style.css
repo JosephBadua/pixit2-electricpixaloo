@@ -7,6 +7,12 @@
         1px 1px 1px rgba(0, 0, 0, 0.5);
 }
 
+.inset {
+  -webkit-box-shadow: inset 0px 2px 21px 3px rgba(0,0,0,0.75);
+  -moz-box-shadow: inset 0px 2px 21px 3px rgba(0,0,0,0.75);
+  box-shadow: inset 0px 2px 21px 3px rgba(0,0,0,0.75);
+}
+
 .hvr-icon-grow {
     display: inline-block;
     vertical-align: middle;
@@ -95,6 +101,9 @@ body {
     height: 20em;
     width: 100%;
     box-shadow: 3px 3px white;
+    -webkit-box-shadow: inset 0px 2px 21px 3px rgba(0,0,0,0.75);
+    -moz-box-shadow: inset 0px 2px 21px 3px rgba(0,0,0,0.75);
+    box-shadow: inset 0px 2px 21px 3px rgba(0,0,0,0.75);
 }
 
 .a {
