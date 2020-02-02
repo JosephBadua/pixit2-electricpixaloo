@@ -1,5 +1,6 @@
 /* Landing */
 body {
+  font-family: 'Poiret One', cursive;
   background: rgb(30,42,66) !important;
 }
 .main {
@@ -9,7 +10,7 @@ body {
     background: rgb(151,198,214);
 }
 .title {
-    font-size: 8em;
+    font-size: 10em;
     text-align: center;
 }
 .nav-link {
@@ -32,7 +33,7 @@ body {
 .pixitMain {
   text-align: center !important;
   padding:0.5em;
-  font-size: 3em;
+  font-size: 2.8em;
   color: white;
   font-weight: bold;
 }
@@ -52,9 +53,10 @@ body {
   color: #fff;
   border-radius: 5px;
   padding: 20px;
+  background: rgb(151,198,214);;
   height:20em;
   width: 100%;
-
+  box-shadow: 3px 3px white;
 }
 
 .a {
@@ -99,8 +101,9 @@ body {
     opacity: 0.3;
   }
   .about-p {
+    font-family: Arial, Helvetica, sans-serif;
     color: #97c6d6;
-    font-size: 2em;
+    font-size: 1.8em;
     font-weight: bold;
     margin: auto;
     width: 90%;

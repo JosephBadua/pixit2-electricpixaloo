@@ -4,7 +4,7 @@ var D = new Date();
 var Hours = D.getHours();
 function initMap() {
   map = new google.maps.Map(document.getElementById('map'), {
-    zoom: 17,
+    zoom: 15,
     zoomControl: false,
     disableDefaultUI: true,
     styles: Hours < 16 ?  [
@@ -107,7 +107,7 @@ function placeMarker(location) {
     });
 }
 
-axios.get('http://35.222.157.224/api_location')
+axios.get ('http://35.222.157.224/api_location')
   .then((response) => {
     for (let i = 0; i < response.data.length; i++) {
       let latitude = response.data[i].latt;
