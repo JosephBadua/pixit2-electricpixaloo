@@ -21,6 +21,9 @@ body {
 .nav-text {
     margin: auto;
 }
+.indi-link {
+  font-size: 1.5em;
+}
 /*map*/ 
 #map {
     height: 60vh;
@@ -179,4 +182,30 @@ tr{
 
 td {
     text-align: center;
+}
+/*Login*/ 
+.LogIn {
+  font-size: 5em;
+  color: white;
+  text-align: center;
+  padding: 1em;
+}
+.outForm{
+  width: 20%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 1em;
+  font-size: 3em;
+}
+.inputBox {
+  font-size: 3em;
+}
+.gridWrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.labelClass {
+  font-size: 3em;
+  color: white;
 }

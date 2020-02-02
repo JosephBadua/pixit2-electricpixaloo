@@ -96,7 +96,7 @@ function initMap() {
 
  var icon = {
   url: 'https://store-images.s-microsoft.com/image/apps.60234.13510798886853140.ed99bad0-2a4d-4a54-af04-ccaad35c8d64.a6d07122-8325-4a53-becd-cd028ec6f55f',
-  scaledSize: new google.maps.Size(50, 50), // scaled size
+  scaledSize: new google.maps.Size(30, 30), // scaled size
 }
 function placeMarker(location) {
   console.log(location)
