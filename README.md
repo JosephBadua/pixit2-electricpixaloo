@@ -1,4 +1,5 @@
-#Pixit
+# Pixit
+
 Pixit was made at HackSC during their annual hackathon at 2020. With the sustainability vertical in mind, Pixit was designed to create a spark of action as well as bring local awareness to the cleanliness of the community. 
 
 ## Getting Started and the Basics
